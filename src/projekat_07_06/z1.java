@@ -2,6 +2,7 @@ package projekat_07_06;
 
 import java.io.File;
 
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -27,7 +28,7 @@ public class z1 {
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 
-		XSSFSheet sheet = wb.getSheet("Employees");
+		XSSFSheet sheet = wb.getSheet("form");
 
 		for (int i = 1; i < 7; i++) {
 			String name = sheet.getRow(i).getCell(0).getStringCellValue();
